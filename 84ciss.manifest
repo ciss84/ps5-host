@@ -1,0 +1,15 @@
+CACHE MANIFEST 
+
+CACHE: 
+c-code.js
+exploit.js
+index.html
+malloc.js
+netcat.html
+rop.js
+sigsegv.js
+syscalls.js
+syscalls2.js
+
+NETWORK: 
+* 
