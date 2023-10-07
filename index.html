@@ -1,4 +1,4 @@
-<html manifest="84ciss.manifest">
+<html >
 
 <head>
     <meta charset="utf-8" />
@@ -7,9 +7,6 @@
 </head>   
 <body>
 	<script>
-if(!document.location.href.endswith("/index.html"))
-    document.location.href = "index.html";
-
 window.applicationCache.ondownloading = function()
 {
 	alert("Caching started !!")
@@ -23,7 +20,11 @@ window.applicationCache.onprogress = function(a)
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
 	alert("Page Cached!!")
+    document.location.href = document.location.href;
 };
+
+if(!document.location.href.endswith("/index.html"))
+    document.location.href = "index.html";
 </script>
     <script>
         // Init on English Language
@@ -57,6 +58,9 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
                 If the system crashes (looks like instant powerdown), press the power button on the PS5 (NOT on the
                 gamepad) until it turns on again, then retry.
             </li>
+            <li>You can load ps5-kstuff (a partial HEN for PS4 fake packages) by clicking JB+KSTUFF instead. Everything
+                above applies. Note that PS4 homebrews that use direct kernel access (kexec) are not supported and will
+                not work using this payload. You can also download the payload for manual sending <a href="ps5-kstuff.bin">here</a>.</li>
         </ol>
         <p><i>This exploit <b>does</b> crash and hang. Sometimes you even have to retry 10 times to get the
                 jailbreak.</i></p>
@@ -76,13 +80,20 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
                 Если система крашится (выглядит как мгновенное выключение), нажимайте кнопку включения на ПРИСТАВКЕ (НЕ
                 НА КОНТРОЛЛЕРЕ), пока она не включится, после чего повторите взлом.
             </li>
+            <li>Вы можете загрузить ps5-kstuff (частичный HEN для fake pkg приложений PS4), нажав JB+KSTUFF. Всё написанное выше применимо и к
+                ps5-kstuff. Обратите внимание, что homebrew-приложения, использующие прямой доступ к ядру (kexec), не поддерживаются и работать
+                не будут. Файл пейлоада для ручной отправки можно скачать <a href="ps5-kstuff.bin">здесь</a>.</li>
         </ol>
         <p><i>Эксплойт <b>будет</b> крашиться и виснуть, иногда вообще только с 10 попытки заводится.</i></p>
         <p><i>Credits: @theflow &mdash; уязвимость ядра, @ChendoChap &mdash; обход CFI в пользовательском пространстве, @SpecterDev и @ChendoChap &mdash; помощь по различным вопросам</i></p>
     </div>
     <div id="progress"></div>
 
-<a href="netcat.html">JB+NETCAT</a>
+<center>
+<a href="netcat.html#payload=ps5-kstuff.bin">JB+KSTUFF</a>
+<a href="netcat.html#payload=henstuff.bin">JB+HENv2</a>
+<a href="netcat.html#payload=Beach_1.46.bin">JB+BEACH</a>
+</center>
 </body>
 
 </html>
