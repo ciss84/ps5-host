@@ -1,11 +1,14 @@
 CACHE MANIFEST 
 
 CACHE: 
+Beach_1.46.bin
 c-code.js
 exploit.js
+henstuff.bin
 index.html
 malloc.js
 netcat.html
+ps5-kstuff.bin
 rop.js
 sigsegv.js
 syscalls.js
