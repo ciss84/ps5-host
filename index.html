@@ -39,6 +39,7 @@ if(!document.location.href.endswith("/index.html"))
             }
         }
     </script>
+<center>
     <p>
         <a href="#" onclick="changeLanguage('english'); return false">English</a>
         <a href="#" onclick="changeLanguage('russian'); return false">Русский</a>
@@ -47,7 +48,7 @@ if(!document.location.href.endswith("/index.html"))
         <h3>READ THIS CAREFULLY BEFORE PROCEEDING</h3>
         <p><b>This exploit loads payloads in PLD (.bin) format on PS5 firmware 4.03. Other firmwares and payload formats are NOT supported.</b></p>
         <ol>
-            <li>Click on the link that says JB+NETCAT. In about 20 seconds you'll get a popup saying
+            Click on the link that says JB+NETCAT. In about 20 seconds you'll get a popup saying
                 "waiting for payloads". This means that everything has gone well.
                 You can then send your payload to TCP port 9019.<br />
                 If something went wrong during the process, you may get an alert saying "Jailbreak failed! Reboot your
@@ -57,10 +58,11 @@ if(!document.location.href.endswith("/index.html"))
                 your PS5 and try again.<br />
                 If the system crashes (looks like instant powerdown), press the power button on the PS5 (NOT on the
                 gamepad) until it turns on again, then retry.
-            </li>
-            <li>You can load ps5-kstuff (a partial HEN for PS4 fake packages) by clicking JB+KSTUFF instead. Everything
+            
+            You can load ps5-kstuff (a partial HEN for PS4 fake packages) by clicking JB+KSTUFF instead. Everything
                 above applies. Note that PS4 homebrews that use direct kernel access (kexec) are not supported and will
-                not work using this payload. You can also download the payload for manual sending <a href="ps5-kstuff.bin">here</a>.</li>
+                not work using this payload. You can also download the payload for manual sending <a href="ps5-kstuff.bin">here</a>.
+
         </ol>
         <p><i>This exploit <b>does</b> crash and hang. Sometimes you even have to retry 10 times to get the
                 jailbreak.</i></p>
@@ -88,7 +90,7 @@ if(!document.location.href.endswith("/index.html"))
         <p><i>Credits: @theflow &mdash; уязвимость ядра, @ChendoChap &mdash; обход CFI в пользовательском пространстве, @SpecterDev и @ChendoChap &mdash; помощь по различным вопросам</i></p>
     </div>
     <div id="progress"></div>
-
+</center>
 <center>
 <a href="netcat.html#payload=ps5-kstuff.bin">JB+KSTUFF</a>
 <a href="netcat.html#payload=henstuff.bin">JB+HENv2</a>
