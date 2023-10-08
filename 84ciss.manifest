@@ -1,7 +1,8 @@
 CACHE MANIFEST 
-#GIT $Id$
+# 2023-10-08:v2
 
 CACHE: 
+84ciss.manifest
 c-code.js
 exploit.js
 henstuff.bin
