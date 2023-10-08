@@ -7,9 +7,9 @@ henstuff.bin
 index.html
 malloc.js
 netcat.html
+ps5-kstuff.bin
 ps5hen.bin
 ps5hendebug.bin
-ps5-kstuff.bin
 rop.js
 sigsegv.js
 syscalls.js
